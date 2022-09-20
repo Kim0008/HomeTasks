@@ -4,7 +4,6 @@ i = 1;
 Console.WriteLine("Введите число:");
 n = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(" ");
-if (i == 1)
     {
     i += 1;
     }

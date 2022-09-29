@@ -15,7 +15,6 @@ void AB(int a, int b)
  Console.WriteLine("Число A в степени B: " + result);
 }
 
-// Функция ввода
 int In(string message)
 {
  Console.WriteLine(message);

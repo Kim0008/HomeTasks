@@ -1,7 +1,7 @@
 ﻿// Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+
 Console.WriteLine("Введите размер массива: ");
 int numbers = Convert.ToInt32(Console.ReadLine());
-
 
 void FillArray(int[] arr)
 {

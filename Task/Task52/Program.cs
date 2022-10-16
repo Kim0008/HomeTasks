@@ -3,6 +3,8 @@
 Random random = new Random();
 int[,] arr = new int[random.Next(5, 10), random.Next(5, 10)];
 Console.WriteLine("Случайный массив:");
+void FillArray(int[,] arr)
+{
 for (int i = 0; i < arr.GetLength(0); i++)
 {
     for (int j = 0; j < arr.GetLength(1); j++)
@@ -12,8 +14,13 @@ for (int i = 0; i < arr.GetLength(0); i++)
     }
     Console.WriteLine("");
 }
+}
+
 Console.WriteLine("---------------------------");
 Console.WriteLine("Колличество столбцов - " + (arr.GetLength(0)));
+
+void PrintArray(int[,] arr)
+{
 for (int j = 0; j < arr.GetLength(1); j++)
 {
     int sum = 0;
@@ -23,4 +30,10 @@ for (int j = 0; j < arr.GetLength(1); j++)
     }
     Console.Write($"{sum / arr.GetLength(0)};");
 }
-Console.ReadLine();
+Console.Write(" - средняя по столбцам!");
+}
+
+int[,] Yourmassiv = new int[random.Next(5, 10), random.Next(5, 10)];
+FillArray(Yourmassiv);
+PrintArray(Yourmassiv);
+
